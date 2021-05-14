@@ -3,6 +3,12 @@
 
 def key_for_min_value(name_hash)
   lowest=''
+  sort_array=[]
   name_hash.each do |key, value|
-    value.sort do |a,b| {a<=>b}
+    sort_array << value
+  end
+  sort_array.sort do |a,b| {a <=> b}
+  sort_array.first
+  
+    
 end
